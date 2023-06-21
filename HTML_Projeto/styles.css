@@ -19,10 +19,18 @@ body{
     padding: 0;
 }
 
+.alinha__botao{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
 .principal{
     background-image: url("imagem/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
 }
 
 .container{
@@ -33,13 +41,13 @@ body{
 
 .container__imagem{
     margin: 1em 0 2em 0;
+    align-items: center;
 }
 
 .container__titulo{
     font-size: 28px;
     font-weight: 700;
 }
-
 
 .container__botao{
     background-color: var(--botao-azul);
@@ -63,5 +71,96 @@ body{
 }
 
 .container__caixa{
-    margin: 0 6em;
+    margin: 0 15%;
+    text-align: center;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario__descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.secundario__descricao__conteudo{
+    color: var(--cinza-secundario);
+}
+
+.container__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.terciario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.terciario__descricao{
+    padding: 2em;
+}
+
+.terciario__imagem{
+    width: 80%;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.footer{
+    font-size: 16px;
+    color: var(--cinza-secundario);
+    text-align: center;
+}
+
+.footer__link{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.lista_link{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fonte-principal);
+    color: var(--branco-principal);
+    margin: 0 0.5em;
+}
+
+.footer__git{
+    text-decoration: none;
+    color: var(--botao-azul);
+    margin: 1em 0px 1em 0px;
+}
+
+.footer__git:hover{
+    color: var(--branco-principal);
 }
