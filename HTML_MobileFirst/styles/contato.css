@@ -1,0 +1,19 @@
+.contato{
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.contato__titulo{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* 
+    MÉTODO PARA COLOCAR COR DEGRADE NA LETRA
+    
+    background: Escolher a cor que quer colocar na letra;
+    -webkit-background-clip: Informar onde vai colocar a cor;
+    -webkit-text-fill-color: Retirar a cor atual da letra;
+    background-clip: colocar a cor do background apenas no texto;
+    */
+}
