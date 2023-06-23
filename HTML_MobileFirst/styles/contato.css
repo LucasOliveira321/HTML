@@ -41,5 +41,26 @@
     font-family: var(--fonte-principal);
     color: var(--azul);
     background: url("../imagens/Email.svg") no-repeat;
-    text-align: center;
+    padding-left: 2em;
 }
+
+@media screen and (min-width: 1024px) {
+    .contato{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contato__titulo{
+        font-size: 24px;
+    }
+
+    .container__descricao{
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .contato__email{
+        width: 30%;
+    }
+}
+
