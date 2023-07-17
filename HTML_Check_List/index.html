@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckList</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CheckList Frota Própria</h1>
+    
+    <div class="section_one">
+        <a class="itens">Data de Saída:</a>
+        <input class="box" type="date">
+        <a class="itens">km inicial</a>
+        <input class="box" type="number">
+        <a class="itens">Veículo</a>
+        <select class="box">
+            <option>Selecionar Veículo</option>
+            <option value="VUC">VUC</option>
+            <option value="TRUCK">TRUCK</option>
+            <option value="TOCO">TOCO</option>
+            <option value="IVECO">IVECO</option>
+        </select>
+    </div>
+    <div class="section_one">
+        <a class="itens">Data de Chegada:</a>
+        <input class="box" type="date">
+        <a class="itens">km final</a>
+        <input class="box" type="number">
+        <a>Motorista</a>
+        <select class="box">
+            <option>Jonas</option>
+            <option>Joao</option>
+            <option>Ricardo</option>
+        </select>
+    </div>
+    <div class="aling">
+        <div class="section_two">
+            <a>
+                Se o Produto/Resíduo for classificado como CLASSE II 
+                - NÃO PERIGOSO realizar a inspeção e preencher até a 
+                Categoria "4", caso contrário, deverá realizar a inspeção 
+                e o preenchimento até a Categoria 5. 
+            </a>
+        </div>
+        <div class="section_two">
+            <a>CLASSE II (NÃO PERIGOSO)</a>
+            <input type="checkbox">
+            <a>CLASSE I (PERIGOSO)</a>
+            <input type="checkbox">
+        </div>
+    </div>
+    <div class="legend">
+        <a>Categorias de Estado</a>
+        <a>Ok</a>
+        <a>Não Ok</a>
+        <a>Não se Aplica</a>
+    </div>
+    
+    
+
+    
+</body>
+</html>
