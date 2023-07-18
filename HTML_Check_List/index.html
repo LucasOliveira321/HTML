@@ -4,63 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CheckList</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>CheckList Frota Própria</h1>
-    
-    <div class="section_one">
-        <a class="itens">Data de Saída:</a>
-        <input class="box" type="date">
-        <a class="itens">km inicial</a>
-        <input class="box" type="number">
-        <a class="itens">Veículo</a>
-        <select class="box">
-            <option>Selecionar Veículo</option>
-            <option value="VUC">VUC</option>
-            <option value="TRUCK">TRUCK</option>
-            <option value="TOCO">TOCO</option>
-            <option value="IVECO">IVECO</option>
-        </select>
-    </div>
-    <div class="section_one">
-        <a class="itens">Data de Chegada:</a>
-        <input class="box" type="date">
-        <a class="itens">km final</a>
-        <input class="box" type="number">
-        <a>Motorista</a>
-        <select class="box">
-            <option>Jonas</option>
-            <option>Joao</option>
-            <option>Ricardo</option>
-        </select>
-    </div>
-    <div class="aling">
-        <div class="section_two">
-            <a>
-                Se o Produto/Resíduo for classificado como CLASSE II 
-                - NÃO PERIGOSO realizar a inspeção e preencher até a 
-                Categoria "4", caso contrário, deverá realizar a inspeção 
-                e o preenchimento até a Categoria 5. 
-            </a>
+    <h1 class="title">CheckList Frota Própria</h1>
+    <hr/>
+    <div>
+        <div class="header">
+            <div class="header_legend">
+                <a>Motorista</a>
+            </div>
+            <div>
+                <select class="header_box">
+                    <option>Motorista</option>
+                    <option>Jonas</option>
+                    <option>Joao</option>
+                    <option>Ricardo</option>
+                </select>
+            </div>
         </div>
-        <div class="section_two">
-            <a>CLASSE II (NÃO PERIGOSO)</a>
-            <input type="checkbox">
-            <a>CLASSE I (PERIGOSO)</a>
-            <input type="checkbox">
+        <div class="header">
+            <div class="header_legend">
+                <a class="itens">Veículo</a>
+            </div>
+            <div>
+                <select class="header_box">
+                    <option>Veículo</option>
+                    <option value="VUC">VUC</option>
+                    <option value="TRUCK">TRUCK</option>
+                    <option value="TOCO">TOCO</option>
+                    <option value="IVECO">IVECO</option>
+                </select>
+            </div>
         </div>
     </div>
-    <div class="legend">
-        <a>Categorias de Estado</a>
-        <a>Ok</a>
-        <a>Não Ok</a>
-        <a>Não se Aplica</a>
+    <div class="section_one">
+        <div>
+            <a class="itens">Data de Saída:</a>
+            <input class="box" type="date">
+        </div>
+        <div>
+            <a class="itens">km inicial</a>
+            <input class="box" type="number">
+        </div>
+        
     </div>
-    
-    
-
-    
+    <div class="section_two">
+        <div class="section_two_text">
+            <div>
+                <a>CLASSE I (PERIGOSO)</a>
+            </div>
+            <div class="section_two_text_checkbox">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="section_two_text">
+            <div>
+                <a>CLASSE II (NÃO PERIGOSO)</a>
+            </div>
+            <div class="section_two_text_checkbox">
+                <input type="checkbox">
+            </div>
+        </div>
+    </div>
+    <div class="button">
+        <a href="nao-perigoso.html" class="button_decoration">Continuar</a>
+    </div>   
 </body>
 </html>
